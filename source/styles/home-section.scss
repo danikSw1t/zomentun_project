@@ -1,0 +1,125 @@
+.home-section {
+    background-image:url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-color:  rgba(0, 255, 133, 0.08);
+    text-align: center;
+    position: relative;
+    &__title {
+        width: 50%;
+        margin: 0 auto;
+        h1{
+            font-size: 48px;
+            line-height: 65px;
+            color: $white;
+            font-family: $primaryFontBold;
+            padding: 114px 0 7px;
+            margin: 0;
+            @media(max-width: $lg){
+                font-size: 25px;
+                line-height: 35px;
+            }
+            @media(max-width: $sm){
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            color: $white;
+            font-family: $primaryFontBook;
+            padding-bottom: 33px;
+            margin: 0;
+            @media(max-width: $lg){
+                font-size: 10px;
+                line-height: 24px;
+            }
+            @media(max-width: $sm){
+                font-size: 6px;
+                line-height: 12px;
+            }
+        }
+        button {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: $white;
+            background-color: $black;
+            padding: 16px 25px;
+            border: 0;
+            margin-bottom: 153px;
+            @media(max-width: $lg){
+                font-size: 12px;
+                line-height: 15px;
+            }
+            @media(max-width: $md){
+                padding: 8px 13px;
+            }
+            @media(max-width: $sm){
+                font-size: 6px;
+                line-height: 10px;
+            }
+        }
+    }
+    &__logo-left{
+        position: absolute;
+        left: 5%;
+        bottom: -5%;
+        @media(max-width: $xl){
+            bottom: 7%;
+            left: 5%;
+        }
+        @media(max-width: $lg) {
+            bottom: 10%;
+        }
+        @media(max-width: $sm){
+            bottom: 4%;
+        }
+        img {
+            @media(max-width: $xl) {
+                width: 35vh;
+            }
+            @media(max-width: $lg) {
+                width: 30vh;
+            }
+            @media(max-width: $md){
+                width: 25vh;
+            }
+            @media(max-width: $md){
+                width: 20vh;
+            }
+        }
+        
+    }
+    &__logo-right{
+        position: absolute;
+        right: 5%;
+        bottom: 11%;
+        @media(max-width: $xl){
+            bottom: 19%;
+            right: 3%;
+        }
+        @media(max-width: $lg) {
+            bottom: 20%;
+            right: 3%;  
+        }
+        @media(max-width: $sm){
+            bottom: 9%;
+        }
+        img {
+            @media(max-width: $xl){
+                width: 30vh;
+            }
+            @media(max-width: $lg) {
+                width: 25vh;
+
+            }
+            @media(max-width: $md){
+                width: 20vh;
+            }
+            @media(max-width: $sm){
+                width: 15vh;
+            }
+        }
+    }
+}

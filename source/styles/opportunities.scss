@@ -1,0 +1,77 @@
+.opportunities {
+    background-color:  rgba(0, 255, 133, 0.08);
+    position: relative;
+    &__title {
+        font-size: 40px;
+        line-height: 51px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $black;
+        font-family: $primaryFontBold;
+        padding: 80px 0 40px;
+        @media(max-width: $lg){
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @media(max-width: $sm){
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+    &__list {
+        @include flex-row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 148px;
+        &-item {
+            width: 15%;
+            text-align: center;
+            margin: 0 28px;
+            p{
+                font-size: 16px;
+                line-height: 27px;
+                letter-spacing: 0.01em;
+                color: $darkNavy;
+                font-family: $primaryFontMedium;
+                @media(max-width: $lg){
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+                @media(max-width: $sm){
+                    font-size: 6px;
+                    line-height: 12px;
+                }
+            }
+            img {
+                @media(max-width: $lg){
+                    width: 10vh;
+                }
+                @media(max-width: $sm){
+                    width: 5vh;
+                }
+            }
+        }
+    }
+    .lefttriangle {
+        position: absolute;
+        bottom: 20%;
+        left:7%;
+        @media(max-width: $lg){
+            width: 10vh;
+        }
+        @media(max-width: $sm){
+            width: 5vh;
+        }
+    }
+    .righttriangle {
+        position: absolute;
+        right: 7%;
+        top: 6%;
+        @media(max-width: $lg){
+            width: 10vh;
+        }
+        @media(max-width: $sm){
+            width: 5vh;
+        }
+    }
+}

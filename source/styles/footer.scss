@@ -1,0 +1,74 @@
+footer {
+    background-color: $black;
+    padding: 89px 0 61px;
+    .container {
+        .links__nav {
+            @include flex-row;
+            justify-content: space-around;
+            @media(max-width: $sm){
+                @include flex-column
+            }
+            &-list {
+                h4 {
+                    font-size: 16px;
+                    line-height: 18px;
+                    letter-spacing: 0.02em;
+                    color: $white;
+                    font-family: $primaryFontBold;
+                    margin-bottom: 24px;
+                    @media(max-width: $sm){
+                        font-size: 8px;
+                        line-height: 14px;
+                    }
+                }
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 0.02em;
+                        color: $white;
+                        font-family: $primaryFontMedium;
+                        margin-bottom: 10px;
+                        @media(max-width: $sm){
+                            font-size: 6px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__info {
+            @include flex-row;
+            justify-content: space-between;
+            margin-top: 47px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: $white;
+            font-family: $primaryFontMedium;
+            margin-bottom: 10px;
+            @media(max-width: $md){
+                justify-content: space-between;
+            }
+            @media(max-width: $sm){
+                font-size: 6px;
+                line-height: 12px;
+            }
+            &-rights {
+                margin-left: 60px;
+                @media(max-width: $xl) {
+                    margin-left: 40px;
+                }
+            }
+            &-follow {
+                margin-right: 75px;
+                @media(max-width: $xl) {
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+}

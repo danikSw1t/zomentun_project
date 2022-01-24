@@ -1,0 +1,20 @@
+mixin navList(title, list)
+    .links__nav-list
+        h4= title
+        ul 
+            -
+            each item in list
+                li= item
+
+
+footer 
+    .container
+        .links__nav 
+            +navList("Product", ["Features", "Pricing", "Integrations", "Product"])
+            +navList("Company", ["About us", "Contact us", "Submit a ticket", "Privacy policy", "Terms & conditions"])
+            +navList("Users", ["Login", "Get a demo", "Talk to us", "Privacy policy", "Terms & conditions"])
+            +navList("Guides", ["MSP", "MSP Sales"])
+            +navList("Contact Us",["Address"])
+        .footer__info
+            .footer__info-rights © 2020 Pactora Inc. All rights reserved.
+            .footer__info-follow Follow us on social

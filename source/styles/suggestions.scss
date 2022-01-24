@@ -1,0 +1,45 @@
+.suggestions{
+    background-color:#E5E5E5;
+    &__items {
+        @include flex-row;
+        @include textstyle;
+        padding: 70px 0;
+        &-info,
+        &-photo {
+            flex: 1;
+            margin: 0 60px;
+            @media(max-width: $lg){
+                margin: 20px;
+            }
+            @media(max-width: $sm){
+                margin: 10px;
+            }
+        }
+        &-photo {
+            display: flex;
+            justify-content: center;
+            img {
+                @media(max-width: $xl){
+                    width: 30vh;
+                }
+                @media(max-width: $sm){
+                    width: 15vh;
+                }
+                @media(max-width: $sm){
+                    width: 10vh;
+                }
+            }
+        }
+    }
+}
+.suggestions__item-link {
+    @media(max-width: $lg){
+        @include flex-row;
+    }
+    img {
+        margin-left: 8px;
+        @media(max-width: $sm){
+            width: 2vh;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import "./constants.scss";
+@import "./fonts.scss";
+@import "./mixins.scss";
+@import "./navbar.scss";
+@import "./home-section.scss";
+@import "./opportunities.scss";
+@import "./suggestions.scss";
+@import "./footer.scss";
+
+
+body {
+  margin: 0px auto;
+  max-width: 1440px;
+}

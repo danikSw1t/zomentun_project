@@ -1,0 +1,27 @@
+section.suggestions
+    .container 
+        mixin suginfo(title, text, name, link, logo) 
+            .suggestions__items
+                .suggestions__items-info
+                    h1=title
+                    p=text 
+                    .suggestions__item-link 
+                        a(href="")=link
+                        img(src="../img/" + logo + ".svg", alt="")
+                .suggestions__items-photo
+                    img(src="../img/" + name + ".svg", alt="")
+        mixin sugphoto(title, text, name, link, logo) 
+            .suggestions__items
+                .suggestions__items-photo
+                    img(src="../img/" + name + ".svg", alt="")   
+                .suggestions__items-info
+                    h1=title
+                    p=text 
+                    .suggestions__item-link 
+                        a(href="")=link
+                        img(src="../img/" + logo + ".svg", alt="")         
+        +suginfo("Your channel program on steroids","Tired of finding MSPs that can help you boost your channel sales?  Youre in luck, because theyre all here.","Your channel")
+        +sugphoto("Become the vendor everyone wants to buy from", "Gain brand authority and visibility with the help of the largest IT service ecosystem. Find customers who are looking for your solution right now!", "Become the vendor","Signup now","arrow") 
+        +suginfo("Its like having Your bestSalesman on autopilot", "Share collaterals and documents that are automatically branded. Leverage a rich partner network that sells your solution exactly the way your best salesman would.", "Its like","Signup now","arrow") 
+        +sugphoto("Track your channel performance", "Monitor the health and revenue of your channel program and streamline your campaign to win more customers within Zomentum.", "Track your","Signup now","arrow")
+        +suginfo("Get The best version of Your sales playbook", "Gather insights about top channel sellers and find out what pitch and collaterals ensure maximum profitability. Win happy customers with an optimized sales playbook.", "Get The best","Signup now","arrow")
